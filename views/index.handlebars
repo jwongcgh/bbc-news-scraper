@@ -1,0 +1,22 @@
+
+    <div id="wrapper">
+      <h1>Articles</h1>
+        <div id="articlesList">
+          <ul>
+            {{#each artic}}
+              <li>
+                <a href={{link}}>{{title}}</a>
+
+                <p>link: {{link}}</p>
+                <p>title: {{title}}</p>
+                <p>id: {{_id}}</p>
+                <p>savedArticle: {{savedArticle}}</p>
+                <a type="submit" class="btn artBtn waves-effect waves-light" data-id={{_id}}>Save Article</a>
+
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
